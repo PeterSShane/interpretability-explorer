@@ -34,7 +34,7 @@ Attention weights are a useful but imperfect lens into model behavior, some inte
 
 ## Live Demo
 
-[Add your Streamlit Cloud link here once deployed]
+https://interpretability-explorer-zpeguigzfvlgmfpq6fc7zt.streamlit.app
 
 ## Planned Extensions
 
