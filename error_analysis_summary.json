@@ -1,0 +1,13 @@
+{
+  "total_examples": 872,
+  "overall_accuracy": 0.9105504587155964,
+  "negation_accuracy": 0.8703703703703703,
+  "negation_count": 270,
+  "non_negation_accuracy": 0.9285714285714286,
+  "non_negation_count": 602,
+  "short_sentence_accuracy": 0.9276315789473685,
+  "short_sentence_count": 152,
+  "long_sentence_accuracy": 0.9069444444444444,
+  "long_sentence_count": 720,
+  "total_misclassified": 78
+}
