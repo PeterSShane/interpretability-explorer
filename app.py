@@ -9,7 +9,7 @@ st.title("Interpretability Explorer")
 st.subheader("See what a sentiment model pays attention to")
 st.write("This tool visualizes what a sentiment classification model is actually focusing on when it makes a decision. Use it to explore attention patterns, test for bias across sensitive attributes, and see what caused specific model errors.")
 
-mode = st.sidebar.radio("Mode", ["Free Text", "Bias Audit", "Error Analysis", "Bias Summary"])
+mode = st.sidebar.radio("Mode", ["Free Text", "Bias Audit", "Error Analysis", "Bias Summary", "Error Summary"])
 
 
 def plot_heatmap(tokens, attn_matrix, title):
@@ -152,3 +152,49 @@ elif mode == "Bias Summary":
 
         max_category = categories[avg_deltas.index(max(avg_deltas))]
         st.info(f"**Finding:** '{max_category}' shows the largest average confidence shift ({max(avg_deltas):.2f}%) across tested pairs, more than any other category. No prediction flips were observed in any category, suggesting the model's final verdicts remain stable, but confidence is not perfectly uniform across sensitive attributes.")
+
+elif mode == "Error Summary":
+    st.write("Accuracy breakdown across the full SST-2 validation set (872 examples).")
+
+    try:
+        with open("error_analysis_summary.json") as f:
+            summary = json.load(f)
+    except FileNotFoundError:
+        st.error("No error summary found. Run `python error_analysis.py` first.")
+        summary = {}
+
+    if summary:
+        st.metric("Overall Accuracy", f"{summary['overall_accuracy']:.2%}", 
+                   help=f"Based on {summary['total_examples']} validation examples")
+
+        categories = ["Negation", "Non-Negation", "Short (≤10 words)", "Long (>10 words)"]
+        accuracies = [
+            summary["negation_accuracy"] * 100,
+            summary["non_negation_accuracy"] * 100,
+            summary["short_sentence_accuracy"] * 100,
+            summary["long_sentence_accuracy"] * 100
+        ]
+        counts = [
+            summary["negation_count"],
+            summary["non_negation_count"],
+            summary["short_sentence_count"],
+            summary["long_sentence_count"]
+        ]
+
+        fig = go.Figure(data=go.Bar(
+            x=categories, y=accuracies,
+            text=[f"n={c}" for c in counts],
+            textposition="outside",
+            marker_color=["indianred", "lightseagreen", "indianred", "lightseagreen"]
+        ))
+        fig.update_layout(
+            title="Accuracy by Sentence Characteristic",
+            yaxis_title="Accuracy (%)",
+            yaxis_range=[80, 100],
+            height=400
+        )
+        st.plotly_chart(fig)
+
+        gap = summary["non_negation_accuracy"] - summary["negation_accuracy"]
+        st.info(f"**Finding:** the model is {gap:.1%} less accurate on negation-containing sentences ({summary['negation_accuracy']:.1%}) compared to non-negation sentences ({summary['non_negation_accuracy']:.1%}), its largest measurable weakness among the factors tested. Out of {summary['total_examples']} validation examples, {summary['total_misclassified']} ({100*summary['total_misclassified']/summary['total_examples']:.1f}%) were misclassified overall.")
+        
