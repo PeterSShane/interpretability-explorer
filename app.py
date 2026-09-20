@@ -3,12 +3,13 @@ import plotly.graph_objects as go
 import json
 from extraction import get_attention_and_prediction
 from bias_pairs import BIAS_PAIRS
+import pandas as pd
 
 st.title("Interpretability Explorer")
 st.subheader("See what a sentiment model pays attention to")
 st.write("This tool visualizes what a sentiment classification model is actually focusing on when it makes a decision. Use it to explore attention patterns, test for bias across sensitive attributes, and see what caused specific model errors.")
 
-mode = st.sidebar.radio("Mode", ["Free Text", "Bias Audit", "Error Analysis"])
+mode = st.sidebar.radio("Mode", ["Free Text", "Bias Audit", "Error Analysis", "Bias Summary"])
 
 
 def plot_heatmap(tokens, attn_matrix, title):
@@ -116,3 +117,38 @@ elif mode == "Error Analysis":
         top_tokens = get_top_attended_tokens(result["tokens"], final_layer_attn)
         token_str = ", ".join([f"'{t}' ({score:.0%})" for t, score in top_tokens])
         st.info(f"**Likely cause of error:** In the final layer (averaged across all heads), the model focused most on {token_str}, but the true label was {example['true_label']}. This mismatch between focus and correct sentiment may explain the mistake.")
+
+elif mode == "Bias Summary":
+    st.write("Aggregate results from running the full bias-pair audit across all categories.")
+
+    try:
+        with open("bias_audit_results.json") as f:
+            bias_results = json.load(f)
+    except FileNotFoundError:
+        st.error("No bias audit results found. Run `python bias_audit_analysis.py` first.")
+        bias_results = {}
+
+    if bias_results:
+        categories = list(bias_results.keys())
+        avg_deltas = [bias_results[c]["avg_confidence_delta"] * 100 for c in categories]
+        flip_counts = [bias_results[c]["flip_count"] for c in categories]
+        total_pairs = [bias_results[c]["total_pairs"] for c in categories]
+
+        df = pd.DataFrame({
+            "Category": categories,
+            "Avg Confidence Delta (%)": avg_deltas,
+            "Prediction Flips": [f"{f}/{t}" for f, t in zip(flip_counts, total_pairs)]
+        })
+
+        fig = go.Figure(data=go.Bar(x=categories, y=avg_deltas, marker_color="indianred"))
+        fig.update_layout(
+            title="Average Confidence Shift by Bias Category",
+            yaxis_title="Avg Confidence Delta (%)",
+            height=400
+        )
+        st.plotly_chart(fig)
+
+        st.dataframe(df, use_container_width=True)
+
+        max_category = categories[avg_deltas.index(max(avg_deltas))]
+        st.info(f"**Finding:** '{max_category}' shows the largest average confidence shift ({max(avg_deltas):.2f}%) across tested pairs, more than any other category. No prediction flips were observed in any category, suggesting the model's final verdicts remain stable, but confidence is not perfectly uniform across sensitive attributes.")

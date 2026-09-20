@@ -1,0 +1,122 @@
+[
+  {
+    "sentence": "holden caulfield did it better . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9907523393630981
+  },
+  {
+    "sentence": "the script kicks in , and mr. hartley 's distended pace and foot-dragging rhythms follow . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.8576427698135376
+  },
+  {
+    "sentence": "jaglom ... put ( s ) the audience in the privileged position of eavesdropping on his characters ",
+    "true_label": "POSITIVE",
+    "predicted": "NEGATIVE",
+    "confidence": 0.9960917830467224
+  },
+  {
+    "sentence": "you wo n't like roger , but you will quickly recognize him . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9985194802284241
+  },
+  {
+    "sentence": "if steven soderbergh 's ` solaris ' is a failure it is a glorious failure . ",
+    "true_label": "POSITIVE",
+    "predicted": "NEGATIVE",
+    "confidence": 0.9993919134140015
+  },
+  {
+    "sentence": "this riveting world war ii moral suspense story deals with the shadow side of american culture : racial prejudice in its ugly and diverse forms . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9993116855621338
+  },
+  {
+    "sentence": "what the director ca n't do is make either of val kilmer 's two personas interesting or worth caring about . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9410338401794434
+  },
+  {
+    "sentence": "sam mendes has become valedictorian at the school for soft landings and easy ways out . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9968371391296387
+  },
+  {
+    "sentence": "every nanosecond of the the new guy reminds you that you could be doing something else far more pleasurable . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9873793125152588
+  },
+  {
+    "sentence": "it seems to me the film is about the art of ripping people off without ever letting them consciously know you have done so ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.997744083404541
+  },
+  {
+    "sentence": "turns potentially forgettable formula into something strangely diverting . ",
+    "true_label": "POSITIVE",
+    "predicted": "NEGATIVE",
+    "confidence": 0.9925454258918762
+  },
+  {
+    "sentence": "pumpkin means to be an outrageous dark satire on fraternity life , but its ambitions far exceed the abilities of writer adam larson broder and his co-director , tony r. abrams , in their feature debut . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.920258104801178
+  },
+  {
+    "sentence": "what better message than ` love thyself ' could young women of any size receive ? ",
+    "true_label": "POSITIVE",
+    "predicted": "NEGATIVE",
+    "confidence": 0.9917102456092834
+  },
+  {
+    "sentence": "the best that can be said about the work here of scottish director ritchie ... is that he obviously does n't have his heart in it . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.8561815023422241
+  },
+  {
+    "sentence": "by getting myself wrapped up in the visuals and eccentricities of many of the characters , i found myself confused when it came time to get to the heart of the movie . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9935867786407471
+  },
+  {
+    "sentence": "rarely has leukemia looked so shimmering and benign . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9779419302940369
+  },
+  {
+    "sentence": "the lower your expectations , the more you 'll enjoy it . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9996402263641357
+  },
+  {
+    "sentence": "though perry and hurley make inspiring efforts to breathe life into the disjointed , haphazard script by jay scherick and david ronn , neither the actors nor director reginald hudlin can make it more than fitfully entertaining . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.6638623476028442
+  },
+  {
+    "sentence": "this time mr. burns is trying something in the martin scorsese street-realist mode , but his self-regarding sentimentality trips him up again . ",
+    "true_label": "NEGATIVE",
+    "predicted": "POSITIVE",
+    "confidence": 0.9758963584899902
+  },
+  {
+    "sentence": "reign of fire looks as if it was made without much thought -- and is best watched that way . ",
+    "true_label": "POSITIVE",
+    "predicted": "NEGATIVE",
+    "confidence": 0.6403136253356934
+  }
+]

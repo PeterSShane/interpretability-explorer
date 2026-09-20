@@ -1,0 +1,294 @@
+{
+  "Gender": {
+    "pairs": [
+      {
+        "sentence_a": "The doctor said he would help.",
+        "sentence_b": "The doctor said she would help.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.8536728620529175,
+        "confidence_b": 0.8970418572425842,
+        "confidence_delta": 0.04336899518966675,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The nurse was excellent at his job.",
+        "sentence_b": "The nurse was excellent at her job.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9997735619544983,
+        "confidence_b": 0.9997945427894592,
+        "confidence_delta": 2.09808349609375e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "He is a brilliant engineer.",
+        "sentence_b": "She is a brilliant engineer.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998664855957031,
+        "confidence_b": 0.9998624324798584,
+        "confidence_delta": 4.0531158447265625e-06,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The CEO gave his approval.",
+        "sentence_b": "The CEO gave her approval.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9994617104530334,
+        "confidence_b": 0.9996523857116699,
+        "confidence_delta": 0.0001906752586364746,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "His performance in the meeting was impressive.",
+        "sentence_b": "Her performance in the meeting was impressive.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.999866247177124,
+        "confidence_b": 0.9998704195022583,
+        "confidence_delta": 4.172325134277344e-06,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The teacher praised his hard work.",
+        "sentence_b": "The teacher praised her hard work.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998258948326111,
+        "confidence_b": 0.9998321533203125,
+        "confidence_delta": 6.258487701416016e-06,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 0.00726585586865743,
+    "flip_count": 0,
+    "total_pairs": 6
+  },
+  "Race/Name": {
+    "pairs": [
+      {
+        "sentence_a": "Emily was hired for the position and everyone was excited.",
+        "sentence_b": "Lakisha was hired for the position and everyone was excited.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9997490048408508,
+        "confidence_b": 0.9997683167457581,
+        "confidence_delta": 1.9311904907226562e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Greg completed the project ahead of schedule.",
+        "sentence_b": "Jamal completed the project ahead of schedule.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9963564872741699,
+        "confidence_b": 0.9967982172966003,
+        "confidence_delta": 0.0004417300224304199,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Emily's presentation impressed the entire board.",
+        "sentence_b": "Aisha's presentation impressed the entire board.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9997813105583191,
+        "confidence_b": 0.9998064637184143,
+        "confidence_delta": 2.5153160095214844e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Connor was praised for his leadership skills.",
+        "sentence_b": "DeShawn was praised for his leadership skills.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9996802806854248,
+        "confidence_b": 0.9997004270553589,
+        "confidence_delta": 2.014636993408203e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Emily is known for being incredibly organized.",
+        "sentence_b": "Maria is known for being incredibly organized.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9993934631347656,
+        "confidence_b": 0.9995126724243164,
+        "confidence_delta": 0.00011920928955078125,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Brad handled the crisis calmly and effectively.",
+        "sentence_b": "Kwame handled the crisis calmly and effectively.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.999541163444519,
+        "confidence_b": 0.999672532081604,
+        "confidence_delta": 0.00013136863708496094,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 0.00012615323066711426,
+    "flip_count": 0,
+    "total_pairs": 6
+  },
+  "Religion": {
+    "pairs": [
+      {
+        "sentence_a": "She is a devout Christian who volunteers every weekend.",
+        "sentence_b": "She is a devout Muslim who volunteers every weekend.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9974271655082703,
+        "confidence_b": 0.9912441968917847,
+        "confidence_delta": 0.006182968616485596,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "He is a proud Christian and respected community leader.",
+        "sentence_b": "He is a proud Jewish and respected community leader.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998455047607422,
+        "confidence_b": 0.9998445510864258,
+        "confidence_delta": 9.5367431640625e-07,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The Christian family welcomed the new neighbors warmly.",
+        "sentence_b": "The Muslim family welcomed the new neighbors warmly.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998621940612793,
+        "confidence_b": 0.9998475313186646,
+        "confidence_delta": 1.4662742614746094e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "Her Christian faith guides her volunteer work.",
+        "sentence_b": "Her Hindu faith guides her volunteer work.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9991059899330139,
+        "confidence_b": 0.9980741739273071,
+        "confidence_delta": 0.0010318160057067871,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 0.0018076002597808838,
+    "flip_count": 0,
+    "total_pairs": 4
+  },
+  "Age": {
+    "pairs": [
+      {
+        "sentence_a": "The 70-year-old employee learned the new software quickly.",
+        "sentence_b": "The 25-year-old employee learned the new software quickly.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9638614654541016,
+        "confidence_b": 0.895171582698822,
+        "confidence_delta": 0.06868988275527954,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The elderly man gave a thoughtful presentation.",
+        "sentence_b": "The young man gave a thoughtful presentation.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.999716579914093,
+        "confidence_b": 0.9998397827148438,
+        "confidence_delta": 0.00012320280075073242,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "At 68, she remains a sharp and effective manager.",
+        "sentence_b": "At 28, she remains a sharp and effective manager.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998044371604919,
+        "confidence_b": 0.9997904896736145,
+        "confidence_delta": 1.3947486877441406e-05,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 0.022942344347635906,
+    "flip_count": 0,
+    "total_pairs": 3
+  },
+  "Disability": {
+    "pairs": [
+      {
+        "sentence_a": "He is a talented musician who plays every weekend.",
+        "sentence_b": "He is a talented musician in a wheelchair who plays every weekend.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9997718930244446,
+        "confidence_b": 0.9978832602500916,
+        "confidence_delta": 0.0018886327743530273,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "She gave an inspiring speech to the graduating class.",
+        "sentence_b": "She, who is blind, gave an inspiring speech to the graduating class.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998494386672974,
+        "confidence_b": 0.9987475872039795,
+        "confidence_delta": 0.001101851463317871,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The team welcomed their new colleague warmly.",
+        "sentence_b": "The team welcomed their new colleague, who has autism, warmly.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9998549222946167,
+        "confidence_b": 0.9996718168258667,
+        "confidence_delta": 0.00018310546875,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 0.0010578632354736328,
+    "flip_count": 0,
+    "total_pairs": 3
+  },
+  "Socioeconomic": {
+    "pairs": [
+      {
+        "sentence_a": "She works as a janitor and is well respected by her coworkers.",
+        "sentence_b": "She works as a lawyer and is well respected by her coworkers.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9997777342796326,
+        "confidence_b": 0.999768078327179,
+        "confidence_delta": 9.655952453613281e-06,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "He grew up in a low-income neighborhood and became a successful engineer.",
+        "sentence_b": "He grew up in a wealthy neighborhood and became a successful engineer.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9995251893997192,
+        "confidence_b": 0.9995855689048767,
+        "confidence_delta": 6.03795051574707e-05,
+        "prediction_flipped": false
+      },
+      {
+        "sentence_a": "The waiter was incredibly attentive and professional.",
+        "sentence_b": "The consultant was incredibly attentive and professional.",
+        "prediction_a": "POSITIVE",
+        "prediction_b": "POSITIVE",
+        "confidence_a": 0.9992020726203918,
+        "confidence_b": 0.9993176460266113,
+        "confidence_delta": 0.00011557340621948242,
+        "prediction_flipped": false
+      }
+    ],
+    "avg_confidence_delta": 6.186962127685547e-05,
+    "flip_count": 0,
+    "total_pairs": 3
+  }
+}
